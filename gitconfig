@@ -5,8 +5,6 @@ email = cbloss@gmail.com
 [credential]
 helper = osxkeychain
 
-# DO NOT EDIT BELOW THIS LINE
-
 [push]
   default = tracking
 [color]
