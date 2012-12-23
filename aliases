@@ -1,3 +1,8 @@
+# Personal
+alias rvdv="ssh dev.revitalix.com -p 922"
+alias rvpd="ssh prod.revitalix.com -p 922"
+alias cmbdv="ssh chasemb.no-ip.org -p 922"
+
 # Unix
 alias tlf="tail -f"
 alias ln='ln -v'
