@@ -40,4 +40,3 @@ source $ZSH/oh-my-zsh.sh
 # export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 
-# DO NOT EDIT BELOW THIS LINE
