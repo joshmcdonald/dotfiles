@@ -1,3 +1,9 @@
+[user]
+name = Chris Blossom
+email = cbloss@gmail.com
+
+# DO NOT EDIT BELOW THIS LINE
+
 [push]
   default = tracking
 [color]
