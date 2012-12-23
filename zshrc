@@ -40,3 +40,7 @@ source $ZSH/oh-my-zsh.sh
 # export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 
+# aliases
+if [ -e "$HOME/.aliases" ]; then
+  source "$HOME/.aliases"
+fi
