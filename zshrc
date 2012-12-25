@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -39,6 +39,9 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 # export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
+
+# OSX Brew coreutils
+[[ -d $(brew --prefix coreutils)/libexec/gnubin ]] && export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 
 # aliases
 if [ -e "$HOME/.aliases" ]; then
