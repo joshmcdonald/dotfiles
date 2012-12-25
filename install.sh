@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ $1 == --update ]; then
+if [ "$1" == "--update" ]; then
   cd ~/dotfiles
   git pull
   git checkout upstream
