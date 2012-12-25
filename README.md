@@ -15,7 +15,7 @@ First, [fork this repo](/thoughtbot/dotfiles#fork_box) on Github.
 
 Then, clone your Github fork onto your laptop and install it:
 
-    git clone git@github.com:your-github-name/dotfiles.git
+    git clone https://chrisblossom@github.com/your-github-name/dotfiles.git
     cd dotfiles
     ./install.sh
 
@@ -40,7 +40,7 @@ Set up the upstream branch
 
 You only have to do this once:
 
-    git remote add upstream git@github.com:thoughtbot/dotfiles.git
+    git remote add upstream https://github.com/thoughtbot/dotfiles.git
     git fetch upstream
     git checkout -b upstream upstream/master
 
