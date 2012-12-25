@@ -41,7 +41,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 
 # OSX Brew coreutils
-[[ -d $(brew --prefix coreutils)/libexec/gnubin ]] && export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+[[ -d $(brew --prefix coreutils)/libexec/gnubin 2> /dev/null) ]] && export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 
 # aliases
 if [ -e "$HOME/.aliases" ]; then
