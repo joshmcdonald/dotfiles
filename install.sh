@@ -36,4 +36,14 @@ done
 
 git submodule init
 git submodule update
+# dotfiles upstream
+git remote add upstream https://github.com/thoughtbot/dotfiles.git
+git fetch upstream
+git checkout -b upstream upstream/master
+
+# oh-my-zsh upstream setup
+cd oh-my-zsh
+git remote add upstream https://github.com/robbyrussell/oh-my-zsh.git
+git fetch upstream
+git checkout -b upstream upstream/master
 vim +BundleInstall +qa
