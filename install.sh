@@ -40,10 +40,12 @@ git submodule update
 git remote add upstream https://github.com/thoughtbot/dotfiles.git
 git fetch upstream
 git checkout -b upstream upstream/master
+git checkout master
 
 # oh-my-zsh upstream setup
 cd oh-my-zsh
 git remote add upstream https://github.com/robbyrussell/oh-my-zsh.git
 git fetch upstream
 git checkout -b upstream upstream/master
+git checkout master
 vim +BundleInstall +qa
