@@ -1,5 +1,24 @@
 #!/bin/sh
 
+if [ $1 == --update ]; then
+  cd ~/dotfiles
+  git pull
+  git checkout upstream
+  git pull
+  git checkout master
+  git rebase upstream
+  git push
+
+  cd ~/dotfiles/oh-my-zsh
+  git pull
+  git checkout upstream
+  git pull
+  git checkout master
+  git rebase upstream
+  git push
+  exit
+fi
+
 cutstring="DO NOT EDIT BELOW THIS LINE"
 
 for name in *; do
