@@ -3,14 +3,18 @@ alias rvdv="ssh dev.revitalix.com -p 922"
 alias rvpd="ssh prod.revitalix.com -p 922"
 alias cmbdv="ssh chasemb.no-ip.org -p 922"
 
+# LS Colors
+export LS_OPTIONS='--color'
+alias l='ls $LS_OPTIONS'
+alias ll='ls $LS_OPTIONS -lh'
+alias lll='ls $LS_OPTIONS -alh'
+alias sl='ls $LS_OPTIONS' # often screw this up
+
 # Unix
 alias tlf="tail -f"
 alias ln='ln -v'
 alias mkdir='mkdir -p'
 alias ...='../..'
-alias l='ls'
-alias ll='ls -al'
-alias lh='ls -Alh'
 alias -g G='| grep'
 alias -g M='| less'
 alias -g L='| wc -l'

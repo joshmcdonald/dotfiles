@@ -43,6 +43,10 @@ export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 # OSX Brew coreutils
 [[ -d $(brew --prefix coreutils 2> /dev/null)/libexec/gnubin ]] && export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 
+# LS Colors
+eval $(dircolors ~/.dircolors)
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+
 # aliases
 if [ -e "$HOME/.aliases" ]; then
   source "$HOME/.aliases"
