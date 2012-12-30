@@ -16,6 +16,16 @@ if [ "$1" == "--update" ]; then
   git checkout master
   git rebase upstream
   git push
+
+
+ cd ~/dotfiles/solarized
+  git pull
+  git checkout upstream
+  git pull
+  git checkout master
+  git rebase upstream
+  git push
+
   exit
 fi
 
@@ -55,6 +65,7 @@ done
 
 git submodule init
 git submodule update
+
 # dotfiles upstream
 git remote add upstream https://github.com/thoughtbot/dotfiles.git
 git fetch upstream
@@ -67,4 +78,12 @@ git remote add upstream https://github.com/robbyrussell/oh-my-zsh.git
 git fetch upstream
 git checkout -b upstream upstream/master
 git checkout master
+
+# Solarized upstream setup
+cd solarized
+git remote add upstream https://github.com/altercation/solarized.git
+git fetch upstream
+git checkout -b upstream upstream/master
+git checkout master
+
 vim +BundleInstall +qa
