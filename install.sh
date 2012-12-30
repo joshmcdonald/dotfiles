@@ -73,14 +73,14 @@ git checkout -b upstream upstream/master
 git checkout master
 
 # oh-my-zsh upstream setup
-cd oh-my-zsh
+cd ~/dotfiles/oh-my-zsh
 git remote add upstream https://github.com/robbyrussell/oh-my-zsh.git
 git fetch upstream
 git checkout -b upstream upstream/master
 git checkout master
 
 # Solarized upstream setup
-cd solarized
+cd ~/dotfiles/solarized
 git remote add upstream https://github.com/altercation/solarized.git
 git fetch upstream
 git checkout -b upstream upstream/master
