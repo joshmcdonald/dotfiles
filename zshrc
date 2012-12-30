@@ -51,3 +51,6 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 if [ -e "$HOME/.aliases" ]; then
   source "$HOME/.aliases"
 fi
+
+# Removes duplicates from $PATH
+export PATH="`echo "$PATH" | awk 'BEGIN{RS=":";}{sub(sprintf("%c$",10),"");if(A[$0]){}else{A[$0]=1;printf(((NR==1)?"":":")$0)}}'`";
