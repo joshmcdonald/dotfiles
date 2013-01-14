@@ -3,7 +3,7 @@ name = chrisblossom
 email = cbloss@gmail.com
 
 [credential]
-helper = osxkeychain
+	helper = osxkeychain
 
 [push]
   default = tracking
