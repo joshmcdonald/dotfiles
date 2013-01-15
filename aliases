@@ -3,6 +3,9 @@ alias rvdv="ssh dev.revitalix.com -p 922"
 alias rvpd="ssh prod.revitalix.com -p 922"
 alias cmbdv="ssh chasemb.no-ip.org -p 922"
 
+# VIM
+alias vi="vim"
+
 # LS Colors
 export LS_OPTIONS='--color'
 alias l='ls $LS_OPTIONS'

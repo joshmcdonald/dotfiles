@@ -177,3 +177,9 @@ endfunction
 function! RunSpecs(command)
   execute ":w\|!clear && echo " . a:command . " && echo && " . a:command
 endfunction
+
+" Home/End keys
+noremap! <C-a> <Home>
+noremap! <C-e> <End>
+noremap <C-a> <Home>
+noremap <C-e> <End>
