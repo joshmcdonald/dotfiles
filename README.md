@@ -15,7 +15,7 @@ First, [fork this repo](/thoughtbot/dotfiles#fork_box) on Github.
 
 Then, clone your Github fork onto your laptop and install it:
 
-    git clone https://chrisblossom@github.com/chrisblossom/dotfiles.git
+    git clone https://joshmcdonald@github.com/joshmcdonald/dotfiles.git
     cd dotfiles
     ./install.sh
 
